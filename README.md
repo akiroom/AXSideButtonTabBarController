@@ -1,6 +1,6 @@
 # AXSideButtonTabBarController
 
-[![CI Status](http://img.shields.io/travis/akiroom/AXSideButtonTabBarController.svg?style=flat)](https://travis-ci.org/Hiroki Akiyama/AXSideButtonTabBarController)
+[![CI Status](http://img.shields.io/travis/akiroom/AXSideButtonTabBarController.svg?style=flat)](https://travis-ci.org/akiroom/AXSideButtonTabBarController)
 [![Version](https://img.shields.io/cocoapods/v/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
 [![License](https://img.shields.io/cocoapods/l/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
