@@ -51,6 +51,7 @@
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont systemFontOfSize:[UIFont systemFontSize] - 4.0];
     _titleLabel.baselineAdjustment = UIBaselineAdjustmentAlignCenters;
+    _titleLabel.highlightedTextColor = [UIColor whiteColor] ;
     [self addSubview:_titleLabel];
   }
   [self updateTintColor:self.tintColor];
@@ -84,6 +85,18 @@
 
 #pragma mark - Property
 
+- (void)setSelected:(BOOL)selected
+{
+  [super setSelected:selected];
+  [self updateTinted:selected];
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+  [super setHighlighted:highlighted];
+  [self updateTinted:highlighted];
+}
+
 - (void)setContentInsets:(UIEdgeInsets)contentInsets
 {
   if (!UIEdgeInsetsEqualToEdgeInsets(_contentInsets, contentInsets)) {
@@ -107,6 +120,14 @@
 }
 
 #pragma mark - Private method
+
+- (void)updateTinted:(BOOL)tinted
+{
+  _titleLabel.highlighted = tinted;
+  _imageView.tintColor = (tinted ?
+                          [UIColor colorWithWhite:1.0 alpha:0.8] :
+                          self.tintColor);
+ }
 
 - (void)updateTintColor:(UIColor *)tintColor
 {
