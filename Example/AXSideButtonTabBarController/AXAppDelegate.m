@@ -14,7 +14,7 @@
   // Sample dummy view controllers;
   UIViewController *dummy0 = [[UIViewController alloc] init];
   dummy0.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:0];
-  dummy0.view.backgroundColor = [UIColor redColor];
+  dummy0.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
   UIViewController *dummy1 = [[UIViewController alloc] init];
   dummy1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:1];
   dummy1.view.backgroundColor = [UIColor greenColor];
