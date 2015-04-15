@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                        * Separators
                        DESC
   s.homepage         = "https://github.com/akiroom/AXSideButtonTabBarController"
-  s.screenshots     = "raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss0.png"
+s.screenshots     = "https://raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss0.png"
   s.license          = 'MIT'
   s.author           = { "Hiroki Akiyama" => "aki-hiroki@nifty.com" }
   s.source           = { :git => "https://github.com/akiroom/AXSideButtonTabBarController.git", :tag => s.version.to_s }
