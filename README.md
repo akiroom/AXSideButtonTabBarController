@@ -1,9 +1,20 @@
 # AXSideButtonTabBarController
 
-[![CI Status](http://img.shields.io/travis/Hiroki Akiyama/AXSideButtonTabBarController.svg?style=flat)](https://travis-ci.org/Hiroki Akiyama/AXSideButtonTabBarController)
+[![CI Status](http://img.shields.io/travis/akiroom/AXSideButtonTabBarController.svg?style=flat)](https://travis-ci.org/Hiroki Akiyama/AXSideButtonTabBarController)
 [![Version](https://img.shields.io/cocoapods/v/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
 [![License](https://img.shields.io/cocoapods/l/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/AXSideButtonTabBarController.svg?style=flat)](http://cocoapods.org/pods/AXSideButtonTabBarController)
+
+## About
+
+AXSideButtonTabBarController  is simple tab bar controller with side buttons.
+
+## Screenshots
+
+![](https://raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss0.png)
+![](https://raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss1.png)
+![](https://raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss2.png)
+![](https://raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss3.png)
 
 ## Usage
 
