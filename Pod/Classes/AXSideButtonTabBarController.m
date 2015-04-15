@@ -81,10 +81,10 @@
   }
 }
 
-- (void)setShowSeparatorInTabBar:(BOOL)showSeparatorInTabBar
+- (void)setSeparatorInTabBar:(AXSideButtonTabBarControllerSeparatorMode)separatorInTabBar
 {
-  if (_showSeparatorInTabBar != showSeparatorInTabBar) {
-    _showSeparatorInTabBar = showSeparatorInTabBar;
+  if (_separatorInTabBar != separatorInTabBar) {
+    _separatorInTabBar = separatorInTabBar;
     [self updateSeparatorInTabBar];
   }
 }
@@ -139,22 +139,31 @@
     [layer removeFromSuperlayer];
   }];
   [_separatorLayers removeAllObjects];
-  if (_showSeparatorInTabBar) {
-    // pre calculation
-    CGFloat leftButtonWidth = [self widthForSideButton:_leftButton];
-    
-    if (_leftButton) {
-      [self generateSeparatorLayerAtPosition:(CGPoint){leftButtonWidth, tabBarY} height:tabBarHeight];
+  switch (_separatorInTabBar) {
+    case AXSideButtonTabBarControllerSeparatorNone:
+      break;
+    case AXSideButtonTabBarControllerSeparatorAll:
+    case AXSideButtonTabBarControllerSeparatorSideButtonOnly: {
+      CGFloat leftButtonWidth = [self widthForSideButton:_leftButton];
+      
+      if (_leftButton) {
+        [self generateSeparatorLayerAtPosition:(CGPoint){leftButtonWidth, tabBarY} height:tabBarHeight];
+      }
+      if (_rightButton) {
+        [self generateSeparatorLayerAtPosition:(CGPoint){CGRectGetMaxX(self.tabBar.frame), tabBarY} height:tabBarHeight];
+      }
+      if (_separatorInTabBar == AXSideButtonTabBarControllerSeparatorAll) {
+        CGFloat positionX;
+        CGFloat tabItemWidth = floor(CGRectGetWidth(self.tabBar.bounds) / self.viewControllers.count);
+        for (NSInteger index = 1; index < self.viewControllers.count; index++) {
+          positionX = leftButtonWidth + tabItemWidth * index;
+          [self generateSeparatorLayerAtPosition:(CGPoint){positionX, tabBarY} height:tabBarHeight];
+        }
+      }
+      break;
     }
-    if (_rightButton) {
-      [self generateSeparatorLayerAtPosition:(CGPoint){CGRectGetMaxX(self.tabBar.frame), tabBarY} height:tabBarHeight];
-    }
-    CGFloat positionX;
-    CGFloat tabItemWidth = floor(CGRectGetWidth(self.tabBar.bounds) / self.viewControllers.count);
-    for (NSInteger index = 1; index < self.viewControllers.count; index++) {
-      positionX = leftButtonWidth + tabItemWidth * index;
-      [self generateSeparatorLayerAtPosition:(CGPoint){positionX, tabBarY} height:tabBarHeight];
-    };
+    default:
+      break;
   }
 }
 

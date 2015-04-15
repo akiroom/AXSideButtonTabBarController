@@ -29,7 +29,7 @@ static const CGFloat kIconSize = 26.0;
   tabBarController.rightButton = [self generateRightFriendsButton];
   
   tabBarController.viewControllers = @[dummy0, dummy1, dummy2];
-  tabBarController.showSeparatorInTabBar = YES;
+  tabBarController.separatorInTabBar = AXSideButtonTabBarControllerSeparatorAll;
   
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   window.rootViewController = tabBarController;

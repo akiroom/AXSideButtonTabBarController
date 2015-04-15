@@ -53,7 +53,11 @@
 
 - (IBAction)toggleShowSeparator:(id)sender {
   AXSideButtonTabBarController *tabBarCon = (id)self.tabBarController;
-  tabBarCon.showSeparatorInTabBar = [(UISwitch *)sender isOn];
+  if ([(UISwitch *)sender isOn]) {
+    tabBarCon.separatorInTabBar = AXSideButtonTabBarControllerSeparatorAll;
+  } else {
+    tabBarCon.separatorInTabBar = AXSideButtonTabBarControllerSeparatorSideButtonOnly;
+  }
 }
 
 @end
