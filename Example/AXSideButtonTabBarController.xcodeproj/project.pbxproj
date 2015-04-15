@@ -21,6 +21,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		754B68DC1ADE6C2700F060D2 /* AXSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B68DA1ADE6C2700F060D2 /* AXSettingsViewController.m */; };
+		754B68DD1ADE6C2700F060D2 /* AXSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B68DB1ADE6C2700F060D2 /* AXSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		754B68D91ADE6C2700F060D2 /* AXSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSettingsViewController.h; sourceTree = "<group>"; };
+		754B68DA1ADE6C2700F060D2 /* AXSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSettingsViewController.m; sourceTree = "<group>"; };
+		754B68DB1ADE6C2700F060D2 /* AXSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXSettingsViewController.xib; sourceTree = "<group>"; };
 		8E7DD833AA921F0368650019 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C8267DC28C38435E9FC84931 /* Pods-AXSideButtonTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXSideButtonTabBarController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXSideButtonTabBarController/Pods-AXSideButtonTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
 		F247164C38F37EA2FBCD5A29 /* Pods-AXSideButtonTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXSideButtonTabBarController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXSideButtonTabBarController/Pods-AXSideButtonTabBarController.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +145,9 @@
 				6003F59D195388D20070C39A /* AXAppDelegate.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				754B68D91ADE6C2700F060D2 /* AXSettingsViewController.h */,
+				754B68DA1ADE6C2700F060D2 /* AXSettingsViewController.m */,
+				754B68DB1ADE6C2700F060D2 /* AXSettingsViewController.xib */,
 			);
 			path = AXSideButtonTabBarController;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				754B68DD1ADE6C2700F060D2 /* AXSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754B68DC1ADE6C2700F060D2 /* AXSettingsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AXAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

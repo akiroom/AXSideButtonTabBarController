@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXSettingsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Left Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-1y-rUY">
+                    <rect key="frame" x="32" y="32" width="134" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08A-wo-NNH">
+                    <rect key="frame" x="255" y="27" width="51" height="31"/>
+                    <connections>
+                        <action selector="toggleShowLeftButton:" destination="-1" eventType="valueChanged" id="1lT-WO-VnC"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Right Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fE-2D-Y6T">
+                    <rect key="frame" x="32" y="69" width="145" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOV-RM-KxF">
+                    <rect key="frame" x="255" y="64" width="51" height="31"/>
+                    <connections>
+                        <action selector="toggleShowRightButton:" destination="-1" eventType="valueChanged" id="j6m-LK-szS"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ofo-ve-LVR">
+                    <rect key="frame" x="255" y="101" width="51" height="31"/>
+                    <connections>
+                        <action selector="toggleShowSeparator:" destination="-1" eventType="valueChanged" id="N8X-3k-8Qr"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Separator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNy-I3-00k">
+                    <rect key="frame" x="32" y="106" width="124" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ofo-ve-LVR" firstAttribute="centerY" secondItem="DNy-I3-00k" secondAttribute="centerY" id="31X-9E-cQg"/>
+                <constraint firstItem="2fE-2D-Y6T" firstAttribute="top" secondItem="hKM-1y-rUY" secondAttribute="bottom" constant="16" id="Abv-fS-2NL"/>
+                <constraint firstItem="hKM-1y-rUY" firstAttribute="leading" secondItem="2fE-2D-Y6T" secondAttribute="leading" id="BwH-fi-xx8"/>
+                <constraint firstItem="uOV-RM-KxF" firstAttribute="centerY" secondItem="2fE-2D-Y6T" secondAttribute="centerY" id="DXv-HZ-klR"/>
+                <constraint firstItem="hKM-1y-rUY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="ENf-YU-5AB"/>
+                <constraint firstItem="DNy-I3-00k" firstAttribute="top" secondItem="2fE-2D-Y6T" secondAttribute="bottom" constant="16" id="It1-Bo-sy0"/>
+                <constraint firstItem="08A-wo-NNH" firstAttribute="centerY" secondItem="hKM-1y-rUY" secondAttribute="centerY" id="ZCp-rN-ZVa"/>
+                <constraint firstItem="uOV-RM-KxF" firstAttribute="trailing" secondItem="08A-wo-NNH" secondAttribute="trailing" id="kVq-8C-wJq"/>
+                <constraint firstAttribute="trailing" secondItem="08A-wo-NNH" secondAttribute="trailing" constant="16" id="qWL-Ql-j8D"/>
+                <constraint firstItem="hKM-1y-rUY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="rq2-YG-9Ru"/>
+                <constraint firstItem="DNy-I3-00k" firstAttribute="leading" secondItem="hKM-1y-rUY" secondAttribute="leading" id="uK7-Nk-rre"/>
+                <constraint firstItem="ofo-ve-LVR" firstAttribute="trailing" secondItem="08A-wo-NNH" secondAttribute="trailing" id="wU6-yI-fz6"/>
+            </constraints>
+            <point key="canvasLocation" x="510" y="328"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

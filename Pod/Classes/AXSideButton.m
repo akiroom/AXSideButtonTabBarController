@@ -5,7 +5,9 @@
 
 #import "AXSideButton.h"
 
-@implementation AXSideButton
+@implementation AXSideButton {
+  NSDate *_lastTouchDownTime;
+}
 
 - (instancetype)initWithTitle:(NSString *)title target:(id)target action:(SEL)action
 {
@@ -23,6 +25,7 @@
     [self configureAXSideButton];
     _titleLabel.text = title;
     _imageView.image = image;
+    self.tintColor = [UIColor colorWithWhite:0.1 alpha:0.8];
     [self addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
   }
   return self;
@@ -81,6 +84,25 @@
   _imageView.bounds = (CGRect){
     CGPointZero, _preferredImageSize
   };
+}
+
+#pragma mark -  Override
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [super touchesBegan:touches withEvent:event];
+  _lastTouchDownTime = [NSDate date];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [super touchesEnded:touches withEvent:event];
+  if (fabs([_lastTouchDownTime timeIntervalSinceNow]) <  0.1) {
+    [self updateTinted:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+      [self updateTinted:NO];
+    });
+  }
 }
 
 #pragma mark - Property

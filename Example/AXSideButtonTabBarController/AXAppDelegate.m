@@ -4,8 +4,10 @@
 //
 
 #import "AXAppDelegate.h"
-#import <AXSideButtonTabBarController/AXSideButtonTabBarController.h>
 #import <FontAwesomeKit/FontAwesomeKit.h>
+#import "AXSettingsViewController.h"
+
+static const CGFloat kIconSize = 26.0;
 
 @implementation AXAppDelegate
 
@@ -17,32 +19,21 @@
   dummy0.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
   UIViewController *dummy1 = [[UIViewController alloc] init];
   dummy1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:1];
-  dummy1.view.backgroundColor = [UIColor greenColor];
-  UIViewController *dummy2 = [[UIViewController alloc] init];
+  dummy1.view.backgroundColor = [UIColor colorWithWhite:0.65 alpha:1.0] ;
+  AXSettingsViewController *dummy2 = [[AXSettingsViewController alloc] init];
   dummy2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:2];
-  dummy2.view.backgroundColor = [UIColor cyanColor];
-  
-  // Dummy Resources
-  const CGFloat kIconSize = 52.0;
-  UIImage *sideMenuIcon = [[[FAKFontAwesome barsIconWithSize:kIconSize] imageWithSize:(CGSize){kIconSize, kIconSize}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-  UIImage *friendsMenuIcon = [[[FAKFontAwesome usersIconWithSize:52.0] imageWithSize:(CGSize){52.0, 52.0}] imageWithRenderingMode: UIImageRenderingModeAlwaysTemplate];
-  UIColor *buttonTintColor = [UIColor colorWithWhite:0.1 alpha:0.8];
   
   // Create tab bar controller
   AXSideButtonTabBarController *tabBarController = [[AXSideButtonTabBarController alloc] init];
-  tabBarController.leftButton = [[AXSideButton alloc] initWithImage:sideMenuIcon
-                                                             target:self action:@selector(showSideMenu:)];
-  tabBarController.leftButton.tintColor = buttonTintColor;
-  tabBarController.rightButton = [[AXSideButton alloc] initWithTitle:@"Friends"
-                                                               image:friendsMenuIcon
-                                                              target:self action:@selector(showSideMenu:)];
-  tabBarController.rightButton.tintColor = buttonTintColor;
-
+  tabBarController.leftButton = [self generateLeftSideMenuButton];
+  tabBarController.rightButton = [self generateRightFriendsButton];
+  
   tabBarController.viewControllers = @[dummy0, dummy1, dummy2];
   tabBarController.showSeparatorInTabBar = YES;
   
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   window.rootViewController = tabBarController;
+  [window makeKeyAndVisible];
   self.window = window;
   return YES;
 }
@@ -74,7 +65,7 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-#pragma mark - Private method
+#pragma mark - Action
 
 - (void)showSideMenu:(id)sender
 {
@@ -84,6 +75,28 @@
 - (void)showFriendList:(id)sender
 {
   
+}
+
+#pragma mark - Dummy button creator
+
+- (AXSideButton *)generateLeftSideMenuButton
+{
+  UIImage *icon = [[[FAKFontAwesome barsIconWithSize:kIconSize] imageWithSize:(CGSize){kIconSize, kIconSize}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+  
+  AXSideButton *button = [[AXSideButton alloc] initWithImage:icon
+                                                      target:self action:@selector(showSideMenu:)];
+  return button;
+}
+
+- (AXSideButton *)generateRightFriendsButton
+{
+  UIImage *icon = [[[FAKFontAwesome usersIconWithSize:kIconSize] imageWithSize:(CGSize){kIconSize, kIconSize}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+  UIColor *buttonTintColor = [UIColor colorWithWhite:0.1 alpha:0.8];
+  
+  AXSideButton *button = [[AXSideButton alloc] initWithTitle:@"Friends"
+                                                       image:icon
+                                                      target:self action:@selector(showSideMenu:)];
+  return button;
 }
 
 @end
