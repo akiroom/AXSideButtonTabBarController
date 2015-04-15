@@ -16,6 +16,9 @@
 @property (readonly, nonatomic) UIImageView *imageView;
 @property (readonly, nonatomic) UILabel *titleLabel;
 @property (nonatomic)  UIEdgeInsets contentInsets;
+@property (nonatomic) CGSize preferredImageSize;
+//@property (nonatomic) CGFloat preferredWidth;
 - (instancetype)initWithTitle:(NSString *)title target:(id)target action:(SEL)action;
+- (instancetype)initWithImage:(UIImage *)image target:(id)target action:(SEL)action;
 - (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image target:(id)target action:(SEL)action;
 @end

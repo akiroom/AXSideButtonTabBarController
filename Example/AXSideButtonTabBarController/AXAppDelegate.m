@@ -13,20 +13,31 @@
 {
   // Sample dummy view controllers;
   UIViewController *dummy0 = [[UIViewController alloc] init];
-  dummy0.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:0];
+  dummy0.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:0];
   dummy0.view.backgroundColor = [UIColor redColor];
   UIViewController *dummy1 = [[UIViewController alloc] init];
-  dummy1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:1];
+  dummy1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:1];
   dummy1.view.backgroundColor = [UIColor greenColor];
   UIViewController *dummy2 = [[UIViewController alloc] init];
   dummy2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:2];
   dummy2.view.backgroundColor = [UIColor cyanColor];
   
+  // Dummy Resources
+  const CGFloat kIconSize = 52.0;
+  UIImage *sideMenuIcon = [[[FAKFontAwesome barsIconWithSize:kIconSize] imageWithSize:(CGSize){kIconSize, kIconSize}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+  UIImage *friendsMenuIcon = [[[FAKFontAwesome usersIconWithSize:52.0] imageWithSize:(CGSize){52.0, 52.0}] imageWithRenderingMode: UIImageRenderingModeAlwaysTemplate];
+  UIColor *buttonTintColor = [UIColor colorWithWhite:0.1 alpha:0.8];
+  
   // Create tab bar controller
   AXSideButtonTabBarController *tabBarController = [[AXSideButtonTabBarController alloc] init];
-  tabBarController.leftButton = [[AXSideButton alloc] initWithTitle:@"SideMenu"
-                                                              image:[[[FAKFontAwesome barsIconWithSize:24.0] imageWithSize:(CGSize){24.0, 24.0}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
+  tabBarController.leftButton = [[AXSideButton alloc] initWithImage:sideMenuIcon
                                                              target:self action:@selector(showSideMenu:)];
+  tabBarController.leftButton.tintColor = buttonTintColor;
+  tabBarController.rightButton = [[AXSideButton alloc] initWithTitle:@"Friends"
+                                                               image:friendsMenuIcon
+                                                              target:self action:@selector(showSideMenu:)];
+  tabBarController.rightButton.tintColor = buttonTintColor;
+
   tabBarController.viewControllers = @[dummy0, dummy1, dummy2];
   tabBarController.showSeparatorInTabBar = YES;
   
