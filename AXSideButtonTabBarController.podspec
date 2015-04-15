@@ -2,17 +2,18 @@
 Pod::Spec.new do |s|
   s.name             = "AXSideButtonTabBarController"
   s.version          = "0.1.0"
-  s.summary          = "Tab Bar Controller with Side Buttons."
+  s.summary          = "Simple Tab Bar Controller with Side Buttons."
   s.description      = <<-DESC
-                       Tab Bar Controller with Side Buttons.
-                       * Enable to set side buttons.
+                       Simple Tab Bar Controller with Side Buttons.
+                       * Side buttons
+                       * Separators
                        DESC
   s.homepage         = "https://github.com/akiroom/AXSideButtonTabBarController"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "raw.github.com/akiroom/AXSideButtonTabBarController/master/Screenshots/ss0.png"
   s.license          = 'MIT'
   s.author           = { "Hiroki Akiyama" => "aki-hiroki@nifty.com" }
   s.source           = { :git => "https://github.com/akiroom/AXSideButtonTabBarController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/akiroom'
+  s.social_media_url = 'https://twitter.com/akiroom'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -21,8 +22,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'AXSideButtonTabBarController' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
