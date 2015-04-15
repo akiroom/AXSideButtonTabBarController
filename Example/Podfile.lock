@@ -1,0 +1,14 @@
+PODS:
+  - AXSideButtonTabBarController (0.1.0)
+
+DEPENDENCIES:
+  - AXSideButtonTabBarController (from `../`)
+
+EXTERNAL SOURCES:
+  AXSideButtonTabBarController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AXSideButtonTabBarController: ea89cf4c8482136a270ecacb91e763dd37266d66
+
+COCOAPODS: 0.36.0

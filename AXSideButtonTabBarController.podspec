@@ -1,28 +1,18 @@
-#
-# Be sure to run `pod lib lint AXSideButtonTabBarController.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = "AXSideButtonTabBarController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of AXSideButtonTabBarController."
+  s.summary          = "Tab Bar Controller with Side Buttons."
   s.description      = <<-DESC
-                       An optional longer description of AXSideButtonTabBarController
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Tab Bar Controller with Side Buttons.
+                       * Enable to set side buttons.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/AXSideButtonTabBarController"
+  s.homepage         = "https://github.com/akiroom/AXSideButtonTabBarController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Hiroki Akiyama" => "aki-hiroki@nifty.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AXSideButtonTabBarController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/akiroom/AXSideButtonTabBarController.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/akiroom'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

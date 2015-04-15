@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AXSideButtonTabBarController_AXSideButtonTabBarController : NSObject
+@end
+@implementation PodsDummy_Pods_AXSideButtonTabBarController_AXSideButtonTabBarController
+@end

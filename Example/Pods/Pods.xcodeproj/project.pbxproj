@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077CD05E9E6AB664D6C5EF44 /* AXSideButtonTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA1712D8EB5567842FBCDF /* AXSideButtonTabBarController.h */; };
+		2249FD358D26687DBC4A4D7E /* AXSideButtonTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEA1712D8EB5567842FBCDF /* AXSideButtonTabBarController.h */; };
+		25AA43E93196F7768AAA1D61 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B123C4E43CE56D48C8A062 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m */; };
+		3686BC2FE2C01204CBC0EACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8447202DD028E9F2C1950FF6 /* Foundation.framework */; };
+		7F7C661E9F6A968DC0CEDAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8447202DD028E9F2C1950FF6 /* Foundation.framework */; };
+		90605450B40CDEB73D52168B /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4308609C48B8EAFBB284A658 /* Pods-Tests-dummy.m */; };
+		AA7A749DAAC9053C20B10290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8447202DD028E9F2C1950FF6 /* Foundation.framework */; };
+		ADC35BF2A35277A30026BAFA /* AXSideButtonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02079EA8066F34E5A994B2ED /* AXSideButtonTabBarController.m */; };
+		B96E4B36BE6E5E8D28156F6F /* Pods-AXSideButtonTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E57B3B1D3EA67CCAFD1396FF /* Pods-AXSideButtonTabBarController-dummy.m */; };
+		C4023B468DBBBC0A432FD59B /* AXSideButtonTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02079EA8066F34E5A994B2ED /* AXSideButtonTabBarController.m */; };
+		D2E8861D93AEEAAAEF866077 /* Pods-Tests-AXSideButtonTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD9F3DD99BEF4749CE8E58B /* Pods-Tests-AXSideButtonTabBarController-dummy.m */; };
+		DF92806FED4FF9A4F95CE875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8447202DD028E9F2C1950FF6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B69B46981423E60B110D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249C98490D8B5B05EBBAAFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0369C48BE4EC7527F5FC92;
+			remoteInfo = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController";
+		};
+		543AAA2998429F956F612DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249C98490D8B5B05EBBAAFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4809D26297FD84277B98D29;
+			remoteInfo = "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController";
+		};
+		AA0146D5C360F98F88D33834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249C98490D8B5B05EBBAAFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16180E4B4AC770C3C55878F1;
+			remoteInfo = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController";
+		};
+		E5C8C4BED812320638A42B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 249C98490D8B5B05EBBAAFC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB90F86AB2F2E32E05638D0;
+			remoteInfo = "Pods-Tests-AXSideButtonTabBarController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02079EA8066F34E5A994B2ED /* AXSideButtonTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AXSideButtonTabBarController.m; sourceTree = "<group>"; };
+		04A4668B5658E191C747F15C /* Pods-AXSideButtonTabBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXSideButtonTabBarController.release.xcconfig"; sourceTree = "<group>"; };
+		06020250E6B6CBE9B03BA47C /* Pods-Tests-AXSideButtonTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AXSideButtonTabBarController.xcconfig"; path = "../Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController.xcconfig"; sourceTree = "<group>"; };
+		13B123C4E43CE56D48C8A062 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m"; sourceTree = "<group>"; };
+		23EF8B5A6AA08D71E8AEFE1F /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2B2E972801553A652902DA06 /* libPods-AXSideButtonTabBarController-AXSideButtonTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXSideButtonTabBarController-AXSideButtonTabBarController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3024AEAFAA8C9DA55E0F3384 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController.xcconfig"; sourceTree = "<group>"; };
+		3D7627CF978A20B1352B8214 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4308609C48B8EAFBB284A658 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		4BA9AAA7D4FCB1B7F50587F2 /* Pods-Tests-AXSideButtonTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-AXSideButtonTabBarController-prefix.pch"; path = "../Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		4DEE6E1A796540EDD88A8EFB /* Pods-AXSideButtonTabBarController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AXSideButtonTabBarController-acknowledgements.plist"; sourceTree = "<group>"; };
+		5AEA1712D8EB5567842FBCDF /* AXSideButtonTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AXSideButtonTabBarController.h; sourceTree = "<group>"; };
+		64BEB2C5F9678ECBFBED5EEC /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		67751B0094AE02B008652C6F /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-Private.xcconfig"; sourceTree = "<group>"; };
+		7302B1894511B3E7EF0E4BED /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73BA412D57EB3A80A6A338E6 /* AXSideButtonTabBarController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXSideButtonTabBarController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D5BF10F5DFC3A2959D281D /* Pods-AXSideButtonTabBarController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AXSideButtonTabBarController-environment.h"; sourceTree = "<group>"; };
+		8447202DD028E9F2C1950FF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8752269A7BFB0F2E0D9D8ADA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		947E1C064C76B22499467B08 /* libPods-Tests-AXSideButtonTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-AXSideButtonTabBarController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C91F4684009176FD8F442C /* Pods-Tests-AXSideButtonTabBarController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AXSideButtonTabBarController-Private.xcconfig"; path = "../Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController-Private.xcconfig"; sourceTree = "<group>"; };
+		97708F90620C8E82496D8D24 /* Pods-AXSideButtonTabBarController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AXSideButtonTabBarController-resources.sh"; sourceTree = "<group>"; };
+		A28EF3F65D03B2DA5C52C044 /* libPods-AXSideButtonTabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXSideButtonTabBarController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C8F468E688E674FC60BEDA /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		BA849796A550E49B4F46BD3A /* Pods-AXSideButtonTabBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AXSideButtonTabBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD9F3DD99BEF4749CE8E58B /* Pods-Tests-AXSideButtonTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-AXSideButtonTabBarController-dummy.m"; path = "../Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController-dummy.m"; sourceTree = "<group>"; };
+		D6A9078F0755138DBF3F44E8 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		DC3D10C876D2F741A9864750 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE78935AFB575BF7978355C1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF242914C423BAA04131C9D5 /* Pods-AXSideButtonTabBarController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AXSideButtonTabBarController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E57B3B1D3EA67CCAFD1396FF /* Pods-AXSideButtonTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AXSideButtonTabBarController-dummy.m"; sourceTree = "<group>"; };
+		FEEE6CBE9C75927B6D524DC3 /* AXSideButtonTabBarController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXSideButtonTabBarController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11ADDAC7DD565683D25F8DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7C661E9F6A968DC0CEDAEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670B72C2935574DE21F5DF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C77E1864A51DCCD3626583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF92806FED4FF9A4F95CE875 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD98EFFDFA4C333CDF36F19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3686BC2FE2C01204CBC0EACD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D86D6E4E15DE0ABBEDD2EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C3051C4A088E394B08D9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7A749DAAC9053C20B10290 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E6D59834F14B1057602CE4D /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D7627CF978A20B1352B8214 /* Pods-Tests-acknowledgements.markdown */,
+				7302B1894511B3E7EF0E4BED /* Pods-Tests-acknowledgements.plist */,
+				4308609C48B8EAFBB284A658 /* Pods-Tests-dummy.m */,
+				64BEB2C5F9678ECBFBED5EEC /* Pods-Tests-environment.h */,
+				D6A9078F0755138DBF3F44E8 /* Pods-Tests-resources.sh */,
+				DE78935AFB575BF7978355C1 /* Pods-Tests.debug.xcconfig */,
+				23EF8B5A6AA08D71E8AEFE1F /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		1CB3B98A690D6281F73587DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5AEA1712D8EB5567842FBCDF /* AXSideButtonTabBarController.h */,
+				02079EA8066F34E5A994B2ED /* AXSideButtonTabBarController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32BD5971CF32DE49A29B6E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BC284B020AD83E46F24DCD2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BC284B020AD83E46F24DCD2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8447202DD028E9F2C1950FF6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3DA2E4185119FA049814256A /* AXSideButtonTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				9FB7B48CD364B7B24FD6B291 /* Pod */,
+				F166253E94CD9835297CF276 /* Support Files */,
+			);
+			name = AXSideButtonTabBarController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		51870AB266010776DF353FDE /* Pods-AXSideButtonTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				DF242914C423BAA04131C9D5 /* Pods-AXSideButtonTabBarController-acknowledgements.markdown */,
+				4DEE6E1A796540EDD88A8EFB /* Pods-AXSideButtonTabBarController-acknowledgements.plist */,
+				E57B3B1D3EA67CCAFD1396FF /* Pods-AXSideButtonTabBarController-dummy.m */,
+				83D5BF10F5DFC3A2959D281D /* Pods-AXSideButtonTabBarController-environment.h */,
+				97708F90620C8E82496D8D24 /* Pods-AXSideButtonTabBarController-resources.sh */,
+				BA849796A550E49B4F46BD3A /* Pods-AXSideButtonTabBarController.debug.xcconfig */,
+				04A4668B5658E191C747F15C /* Pods-AXSideButtonTabBarController.release.xcconfig */,
+			);
+			name = "Pods-AXSideButtonTabBarController";
+			path = "Target Support Files/Pods-AXSideButtonTabBarController";
+			sourceTree = "<group>";
+		};
+		5EA0D0CB6ECE248E6C809C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73BA412D57EB3A80A6A338E6 /* AXSideButtonTabBarController.bundle */,
+				FEEE6CBE9C75927B6D524DC3 /* AXSideButtonTabBarController.bundle */,
+				A28EF3F65D03B2DA5C52C044 /* libPods-AXSideButtonTabBarController.a */,
+				2B2E972801553A652902DA06 /* libPods-AXSideButtonTabBarController-AXSideButtonTabBarController.a */,
+				DC3D10C876D2F741A9864750 /* libPods-Tests.a */,
+				947E1C064C76B22499467B08 /* libPods-Tests-AXSideButtonTabBarController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7791E67DBD53B5E4A591D084 = {
+			isa = PBXGroup;
+			children = (
+				8752269A7BFB0F2E0D9D8ADA /* Podfile */,
+				AF5D7646BD33A35ECE356CA4 /* Development Pods */,
+				32BD5971CF32DE49A29B6E83 /* Frameworks */,
+				5EA0D0CB6ECE248E6C809C25 /* Products */,
+				99A919EACAEB948892AB7275 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		99A919EACAEB948892AB7275 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51870AB266010776DF353FDE /* Pods-AXSideButtonTabBarController */,
+				0E6D59834F14B1057602CE4D /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9FB7B48CD364B7B24FD6B291 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1CB3B98A690D6281F73587DC /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		AF5D7646BD33A35ECE356CA4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DA2E4185119FA049814256A /* AXSideButtonTabBarController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F166253E94CD9835297CF276 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3024AEAFAA8C9DA55E0F3384 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController.xcconfig */,
+				67751B0094AE02B008652C6F /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-Private.xcconfig */,
+				13B123C4E43CE56D48C8A062 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m */,
+				A8C8F468E688E674FC60BEDA /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-prefix.pch */,
+				06020250E6B6CBE9B03BA47C /* Pods-Tests-AXSideButtonTabBarController.xcconfig */,
+				94C91F4684009176FD8F442C /* Pods-Tests-AXSideButtonTabBarController-Private.xcconfig */,
+				CAD9F3DD99BEF4749CE8E58B /* Pods-Tests-AXSideButtonTabBarController-dummy.m */,
+				4BA9AAA7D4FCB1B7F50587F2 /* Pods-Tests-AXSideButtonTabBarController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		363B0DE6FEEF9CAA750FF129 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077CD05E9E6AB664D6C5EF44 /* AXSideButtonTabBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0FA6ABE4E28A86CB03E3B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2249FD358D26687DBC4A4D7E /* AXSideButtonTabBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0CB90F86AB2F2E32E05638D0 /* Pods-Tests-AXSideButtonTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A33AAFB8774903F9A8BB7C /* Build configuration list for PBXNativeTarget "Pods-Tests-AXSideButtonTabBarController" */;
+			buildPhases = (
+				1C5397F75A1B2DA8B3C58680 /* Sources */,
+				74C77E1864A51DCCD3626583 /* Frameworks */,
+				363B0DE6FEEF9CAA750FF129 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4728E05143A8ABE7CCB7926A /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-AXSideButtonTabBarController";
+			productName = "Pods-Tests-AXSideButtonTabBarController";
+			productReference = 947E1C064C76B22499467B08 /* libPods-Tests-AXSideButtonTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		16180E4B4AC770C3C55878F1 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D922B7E07B446E10568986C3 /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController" */;
+			buildPhases = (
+				1472132967ED96855A2A67BE /* Sources */,
+				670B72C2935574DE21F5DF29 /* Frameworks */,
+				A24F556DF573106FD49B2A45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productName = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productReference = FEEE6CBE9C75927B6D524DC3 /* AXSideButtonTabBarController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		28653B35667A717A220CBCFB /* Pods-AXSideButtonTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E019212496BD636EBB8A36A /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController" */;
+			buildPhases = (
+				3BC3E75A86BBB6611CAE9066 /* Sources */,
+				D0C3051C4A088E394B08D9F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C50801C0D295EB7B81CC9550 /* PBXTargetDependency */,
+			);
+			name = "Pods-AXSideButtonTabBarController";
+			productName = "Pods-AXSideButtonTabBarController";
+			productReference = A28EF3F65D03B2DA5C52C044 /* libPods-AXSideButtonTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62D6103EEDAB4AC424A59BBB /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB857881823CBF0530F2A99 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				D00AC0C1B7EDEF76F46493EC /* Sources */,
+				7AD98EFFDFA4C333CDF36F19 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF88201320B38C7FBEF55890 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = DC3D10C876D2F741A9864750 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4809D26297FD84277B98D29 /* Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D2E68C60105552917C167EB /* Build configuration list for PBXNativeTarget "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController" */;
+			buildPhases = (
+				6E8F7D09CCC2DA79BE55419A /* Sources */,
+				9D86D6E4E15DE0ABBEDD2EDD /* Frameworks */,
+				E77E398C6F94B042AFCFFFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productName = "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productReference = 73BA412D57EB3A80A6A338E6 /* AXSideButtonTabBarController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DF0369C48BE4EC7527F5FC92 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90A451AF8FBA8786D095E1AA /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController" */;
+			buildPhases = (
+				C0827921E1A647717CFC1BD1 /* Sources */,
+				11ADDAC7DD565683D25F8DDF /* Frameworks */,
+				F0FA6ABE4E28A86CB03E3B6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09ABBFB14C9A8000166CF96A /* PBXTargetDependency */,
+			);
+			name = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productName = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			productReference = 2B2E972801553A652902DA06 /* libPods-AXSideButtonTabBarController-AXSideButtonTabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		249C98490D8B5B05EBBAAFC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = F48B448C62C44537B39D7BD2 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7791E67DBD53B5E4A591D084;
+			productRefGroup = 5EA0D0CB6ECE248E6C809C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28653B35667A717A220CBCFB /* Pods-AXSideButtonTabBarController */,
+				DF0369C48BE4EC7527F5FC92 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController */,
+				16180E4B4AC770C3C55878F1 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController */,
+				62D6103EEDAB4AC424A59BBB /* Pods-Tests */,
+				0CB90F86AB2F2E32E05638D0 /* Pods-Tests-AXSideButtonTabBarController */,
+				A4809D26297FD84277B98D29 /* Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A24F556DF573106FD49B2A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77E398C6F94B042AFCFFFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1472132967ED96855A2A67BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5397F75A1B2DA8B3C58680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC35BF2A35277A30026BAFA /* AXSideButtonTabBarController.m in Sources */,
+				D2E8861D93AEEAAAEF866077 /* Pods-Tests-AXSideButtonTabBarController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC3E75A86BBB6611CAE9066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96E4B36BE6E5E8D28156F6F /* Pods-AXSideButtonTabBarController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8F7D09CCC2DA79BE55419A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0827921E1A647717CFC1BD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4023B468DBBBC0A432FD59B /* AXSideButtonTabBarController.m in Sources */,
+				25AA43E93196F7768AAA1D61 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00AC0C1B7EDEF76F46493EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90605450B40CDEB73D52168B /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09ABBFB14C9A8000166CF96A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			target = 16180E4B4AC770C3C55878F1 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController */;
+			targetProxy = AA0146D5C360F98F88D33834 /* PBXContainerItemProxy */;
+		};
+		4728E05143A8ABE7CCB7926A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			target = A4809D26297FD84277B98D29 /* Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController */;
+			targetProxy = 543AAA2998429F956F612DD0 /* PBXContainerItemProxy */;
+		};
+		C50801C0D295EB7B81CC9550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController";
+			target = DF0369C48BE4EC7527F5FC92 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController */;
+			targetProxy = 09B69B46981423E60B110D98 /* PBXContainerItemProxy */;
+		};
+		CF88201320B38C7FBEF55890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-AXSideButtonTabBarController";
+			target = 0CB90F86AB2F2E32E05638D0 /* Pods-Tests-AXSideButtonTabBarController */;
+			targetProxy = E5C8C4BED812320638A42B23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		124D55702F0D14011D70BFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BAFFCD44126CD51914DCB7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXSideButtonTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1E0EAA6471D4853E2F427D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C91F4684009176FD8F442C /* Pods-Tests-AXSideButtonTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		23318773D5891B8E7EBC82A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA849796A550E49B4F46BD3A /* Pods-AXSideButtonTabBarController.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		23C1A59CCDC6FF6C8AA7BEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EF8B5A6AA08D71E8AEFE1F /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2FD33B99D1CC00B3D6D428AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67751B0094AE02B008652C6F /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AXSideButtonTabBarController-AXSideButtonTabBarController/Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		34767ADA1D668E0E2B448774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67751B0094AE02B008652C6F /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AXSideButtonTabBarController-AXSideButtonTabBarController/Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		645927B8AD1D7D5782EE1270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXSideButtonTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		98D25F50A63AA5F1F0B9105B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C127A36A72D8AF3F97B8FB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXSideButtonTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C67322E40107114700A0BD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE78935AFB575BF7978355C1 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D38ACF1C34D49173411449D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C91F4684009176FD8F442C /* Pods-Tests-AXSideButtonTabBarController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D4EB440C31BC529E13E2789A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A4668B5658E191C747F15C /* Pods-AXSideButtonTabBarController.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB358CA8DE5A3BDF88ADE71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AXSideButtonTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D2E68C60105552917C167EB /* Build configuration list for PBXNativeTarget "Pods-Tests-AXSideButtonTabBarController-AXSideButtonTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB358CA8DE5A3BDF88ADE71A /* Debug */,
+				1BAFFCD44126CD51914DCB7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FB857881823CBF0530F2A99 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67322E40107114700A0BD63 /* Debug */,
+				23C1A59CCDC6FF6C8AA7BEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E019212496BD636EBB8A36A /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23318773D5891B8E7EBC82A6 /* Debug */,
+				D4EB440C31BC529E13E2789A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90A451AF8FBA8786D095E1AA /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34767ADA1D668E0E2B448774 /* Debug */,
+				2FD33B99D1CC00B3D6D428AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D922B7E07B446E10568986C3 /* Build configuration list for PBXNativeTarget "Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-AXSideButtonTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C127A36A72D8AF3F97B8FB69 /* Debug */,
+				645927B8AD1D7D5782EE1270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F48B448C62C44537B39D7BD2 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D25F50A63AA5F1F0B9105B /* Debug */,
+				124D55702F0D14011D70BFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A33AAFB8774903F9A8BB7C /* Build configuration list for PBXNativeTarget "Pods-Tests-AXSideButtonTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38ACF1C34D49173411449D0 /* Debug */,
+				1E0EAA6471D4853E2F427D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 249C98490D8B5B05EBBAAFC0 /* Project object */;
+}
