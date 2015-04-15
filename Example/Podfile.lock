@@ -1,8 +1,24 @@
 PODS:
   - AXSideButtonTabBarController (0.1.0)
+  - FontAwesomeKit (2.2.0):
+    - FontAwesomeKit/Core (= 2.2.0)
+    - FontAwesomeKit/FontAwesome (= 2.2.0)
+    - FontAwesomeKit/FoundationIcons (= 2.2.0)
+    - FontAwesomeKit/IonIcons (= 2.2.0)
+    - FontAwesomeKit/Zocial (= 2.2.0)
+  - FontAwesomeKit/Core (2.2.0)
+  - FontAwesomeKit/FontAwesome (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.0):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.0):
+    - FontAwesomeKit/Core
 
 DEPENDENCIES:
   - AXSideButtonTabBarController (from `../`)
+  - FontAwesomeKit (~> 2.2)
 
 EXTERNAL SOURCES:
   AXSideButtonTabBarController:
@@ -10,5 +26,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AXSideButtonTabBarController: ea89cf4c8482136a270ecacb91e763dd37266d66
+  FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
 
 COCOAPODS: 0.36.0

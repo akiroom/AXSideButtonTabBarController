@@ -5,6 +5,7 @@
 
 #import "AXAppDelegate.h"
 #import <AXSideButtonTabBarController/AXSideButtonTabBarController.h>
+#import <FontAwesomeKit/FontAwesomeKit.h>
 
 @implementation AXAppDelegate
 
@@ -23,7 +24,11 @@
   
   // Create tab bar controller
   AXSideButtonTabBarController *tabBarController = [[AXSideButtonTabBarController alloc] init];
+  tabBarController.leftButton = [[AXSideButton alloc] initWithTitle:@"SideMenu"
+                                                              image:[[[FAKFontAwesome barsIconWithSize:24.0] imageWithSize:(CGSize){24.0, 24.0}] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
+                                                             target:self action:@selector(showSideMenu:)];
   tabBarController.viewControllers = @[dummy0, dummy1, dummy2];
+  tabBarController.showSeparatorInTabBar = YES;
   
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   window.rootViewController = tabBarController;
@@ -56,6 +61,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Private method
+
+- (void)showSideMenu:(id)sender
+{
+  [[[UIAlertView alloc] initWithTitle:nil message:@"called showSideMenu:" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+}
+
+- (void)showFriendList:(id)sender
+{
+  
 }
 
 @end

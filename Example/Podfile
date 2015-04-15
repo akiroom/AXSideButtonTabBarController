@@ -1,11 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'AXSideButtonTabBarController', :exclusive => true do
-  pod "AXSideButtonTabBarController", :path => "../"
+  pod 'AXSideButtonTabBarController', :path => '../'
+  pod 'FontAwesomeKit', '~> 2.2'
 end
 
 target 'Tests', :exclusive => true do
-  pod "AXSideButtonTabBarController", :path => "../"
-
-  
+  pod 'AXSideButtonTabBarController', :path => '../'
 end

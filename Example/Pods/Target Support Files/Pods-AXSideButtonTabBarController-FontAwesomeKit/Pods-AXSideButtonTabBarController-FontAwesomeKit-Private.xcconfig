@@ -1,0 +1,6 @@
+#include "Pods-AXSideButtonTabBarController-FontAwesomeKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/FontAwesomeKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AXSideButtonTabBarController" "${PODS_ROOT}/Headers/Public/FontAwesomeKit"
+OTHER_LDFLAGS = ${PODS_AXSIDEBUTTONTABBARCONTROLLER_FONTAWESOMEKIT_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
