@@ -5,6 +5,7 @@
 
 #import "AXAppDelegate.h"
 #import <FontAwesomeKit/FontAwesomeKit.h>
+#import "AXNextSampleViewController.h"
 #import "AXSettingsViewController.h"
 
 static const CGFloat kIconSize = 26.0;
@@ -14,12 +15,12 @@ static const CGFloat kIconSize = 26.0;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Sample dummy view controllers;
-  UIViewController *dummy0 = [[UIViewController alloc] init];
+  AXNextSampleViewController *dummy0 = [[AXNextSampleViewController alloc] init];
   dummy0.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:0];
-  dummy0.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+  dummy0.view.backgroundColor = [UIColor whiteColor];
   UIViewController *dummy1 = [[UIViewController alloc] init];
   dummy1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:1];
-  dummy1.view.backgroundColor = [UIColor colorWithWhite:0.65 alpha:1.0] ;
+  dummy1.view.backgroundColor = [UIColor whiteColor];
   AXSettingsViewController *dummy2 = [[AXSettingsViewController alloc] init];
   dummy2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:2];
   
@@ -28,7 +29,12 @@ static const CGFloat kIconSize = 26.0;
   tabBarController.leftButton = [self generateLeftSideMenuButton];
   tabBarController.rightButton = [self generateRightFriendsButton];
   
-  tabBarController.viewControllers = @[dummy0, dummy1, dummy2];
+  tabBarController.viewControllers =
+  @[
+    [[UINavigationController alloc] initWithRootViewController:dummy0],
+    dummy1,
+    dummy2
+    ];
   tabBarController.separatorInTabBar = AXSideButtonTabBarControllerSeparatorAll;
   
   UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
