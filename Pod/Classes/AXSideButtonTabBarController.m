@@ -97,17 +97,6 @@
   }
 }
 
-- (void)setTabBarHidden:(BOOL)tabBarHidden
-{
-  [self setTabBarHidden:tabBarHidden animated:NO];
-}
-
-- (void)setTabBarHidden:(BOOL)tabBarHidden animated:(BOOL)animated
-{
-  _tabBarHidden = tabBarHidden;
-  [self.tabBar setHidden:tabBarHidden];
-}
-
 #pragma mark - Observer
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
