@@ -7,7 +7,7 @@
 
 ## About
 
-AXSideButtonTabBarController  is simple tab bar controller with side buttons.
+AXSideButtonTabBarController  is the simple tab bar controller with side buttons.
 
 ## Screenshots
 
