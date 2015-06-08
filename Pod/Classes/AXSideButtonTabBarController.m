@@ -5,6 +5,8 @@
 
 #import "AXSideButtonTabBarController.h"
 
+NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
+
 @interface AXSideButtonTabBarController ()
 
 @end
@@ -18,16 +20,14 @@
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     _backgroundTabBar = [[UITabBar alloc] init];
     _separatorLayers = [NSMutableArray array];
-    [self.tabBar addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:NULL];
-    [self.tabBar addObserver:self forKeyPath:@"alpha" options:NSKeyValueObservingOptionNew context:NULL];
-    [self.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:NULL];
+    [self.tabBar addObserver:self forKeyPath:kAXSideButtonTabBarControllerHiddenKey options:NSKeyValueObservingOptionNew context:NULL];
   }
   return self;
 }
 
 - (void)dealloc
 {
-  [self.tabBar removeObserver:self forKeyPath:@"frame"];
+  [self.tabBar removeObserver:self forKeyPath:kAXSideButtonTabBarControllerHiddenKey];
 }
 
 - (void)viewDidLoad {
@@ -102,7 +102,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
   if (object == self.tabBar) {
-    if ([keyPath isEqualToString:@"hidden"]) {
+    if ([keyPath isEqualToString:kAXSideButtonTabBarControllerHiddenKey]) {
       BOOL tabBarHidden = [change[@"new"] boolValue];
       [CATransaction begin];
       [CATransaction setDisableActions:YES];
