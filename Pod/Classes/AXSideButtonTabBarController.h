@@ -17,4 +17,6 @@ typedef NS_ENUM(NSInteger, AXSideButtonTabBarControllerSeparatorMode) {
 @property (strong, nonatomic) UIView<AXSideButton> *leftButton;
 @property (strong, nonatomic) UIView<AXSideButton> *rightButton;
 @property (nonatomic) AXSideButtonTabBarControllerSeparatorMode separatorInTabBar;
+@property (nonatomic) BOOL tabBarHidden;
+- (void)setTabBarHidden:(BOOL)tabBarHidden animated:(BOOL)animated;
 @end

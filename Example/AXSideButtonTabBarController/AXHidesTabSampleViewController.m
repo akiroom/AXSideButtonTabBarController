@@ -4,7 +4,9 @@
 //
 
 #import "AXHidesTabSampleViewController.h"
+#import <AXSideButtonTabBarController/AXSideButtonTabBarController.h>
 #import "AXNextSampleViewController.h"
+
 @interface AXHidesTabSampleViewController ()
 
 @end
@@ -13,7 +15,6 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-//  self.hidesBottomBarWhenPushed = YES;
   
   self.title = @"HidesTabSample";
   self.view.backgroundColor = [UIColor whiteColor];
@@ -28,6 +29,18 @@
   [nextButton addTarget:self action:@selector(goToNext:)
        forControlEvents:UIControlEventTouchUpInside];
   [self.view addSubview:nextButton];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  [self.tabBarController.tabBar setHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+  [self.tabBarController.tabBar setHidden:NO];
+  [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,8 +18,16 @@
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     _backgroundTabBar = [[UITabBar alloc] init];
     _separatorLayers = [NSMutableArray array];
+    [self.tabBar addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:NULL];
+    [self.tabBar addObserver:self forKeyPath:@"alpha" options:NSKeyValueObservingOptionNew context:NULL];
+    [self.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:NULL];
   }
   return self;
+}
+
+- (void)dealloc
+{
+  [self.tabBar removeObserver:self forKeyPath:@"frame"];
 }
 
 - (void)viewDidLoad {
@@ -86,6 +94,37 @@
   if (_separatorInTabBar != separatorInTabBar) {
     _separatorInTabBar = separatorInTabBar;
     [self updateSeparatorInTabBar];
+  }
+}
+
+- (void)setTabBarHidden:(BOOL)tabBarHidden
+{
+  [self setTabBarHidden:tabBarHidden animated:NO];
+}
+
+- (void)setTabBarHidden:(BOOL)tabBarHidden animated:(BOOL)animated
+{
+  _tabBarHidden = tabBarHidden;
+  [self.tabBar setHidden:tabBarHidden];
+}
+
+#pragma mark - Observer
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+  if (object == self.tabBar) {
+    if ([keyPath isEqualToString:@"hidden"]) {
+      BOOL tabBarHidden = [change[@"new"] boolValue];
+      [CATransaction begin];
+      [CATransaction setDisableActions:YES];
+      [_separatorLayers enumerateObjectsUsingBlock:^(CALayer *layer, NSUInteger idx, BOOL *stop) {
+        layer.hidden = tabBarHidden;
+      }];
+      [CATransaction commit];
+      [_leftButton setHidden:tabBarHidden];
+      [_rightButton setHidden:tabBarHidden];
+      [_backgroundTabBar setHidden:tabBarHidden];
+    }
   }
 }
 
