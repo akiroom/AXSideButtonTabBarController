@@ -1,23 +1,21 @@
 //
-//  AXNextSampleViewController.m
+//  AXHidesTabSampleViewController.m
 //  AXSideButtonTabBarController
 //
 
-#import "AXNextSampleViewController.h"
 #import "AXHidesTabSampleViewController.h"
-
-@interface AXNextSampleViewController ()
+#import "AXNextSampleViewController.h"
+@interface AXHidesTabSampleViewController ()
 
 @end
 
-@implementation AXNextSampleViewController
+@implementation AXHidesTabSampleViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
+//  self.hidesBottomBarWhenPushed = YES;
   
-  self.title = @"NextSample";
-  
+  self.title = @"HidesTabSample";
   self.view.backgroundColor = [UIColor whiteColor];
   
   UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -33,14 +31,14 @@
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 - (void)goToNext:(id)sender
 {
-  AXHidesTabSampleViewController *hidesTabSampleViewCon = [[AXHidesTabSampleViewController alloc] init];
-  [self.navigationController pushViewController:hidesTabSampleViewCon
+  AXNextSampleViewController *nextViewCon = [[AXNextSampleViewController alloc] init];
+  [self.navigationController pushViewController:nextViewCon
                                        animated:YES];
 }
 
