@@ -4,6 +4,7 @@
 //
 
 #import "AXNextSampleViewController.h"
+#import "AXHidesTabSampleViewController.h"
 
 @interface AXNextSampleViewController ()
 
@@ -14,6 +15,8 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  self.title = @"NextSample";
   
   self.view.backgroundColor = [UIColor whiteColor];
   
@@ -36,8 +39,8 @@
 
 - (void)goToNext:(id)sender
 {
-  AXNextSampleViewController *nextViewCon = [[AXNextSampleViewController alloc] init];
-  [self.navigationController pushViewController:nextViewCon
+  AXHidesTabSampleViewController *hidesTabSampleViewCon = [[AXHidesTabSampleViewController alloc] init];
+  [self.navigationController pushViewController:hidesTabSampleViewCon
                                        animated:YES];
 }
 
