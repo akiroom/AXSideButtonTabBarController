@@ -4,6 +4,7 @@
 //
 
 #import "AXSideButtonTabBarController.h"
+#import "AXSideButtonsContainer.h"
 
 NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
 
@@ -12,6 +13,7 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
 @end
 
 @implementation AXSideButtonTabBarController {
+  AXSideButtonsContainer *_container;
   NSMutableArray *_separatorLayers;
 }
 
@@ -32,6 +34,8 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  _container = [[AXSideButtonsContainer alloc] init];
+  [self.view addSubview:_container];
   self.tabBar.shadowImage = [[UIImage alloc] init];
   self.tabBar.backgroundImage = [[UIImage alloc] init];
   [self updateTabBarLayout];
@@ -41,15 +45,17 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
 {
   [super viewDidLayoutSubviews];
   
+  [_container setFrame:self.view.bounds];
+
   // MEMO: These codes in HERE is bad hack for UITabBarController.
   if (![self.view.subviews containsObject:_backgroundTabBar]) {
     [self.view insertSubview:_backgroundTabBar belowSubview:self.tabBar];
   }
   if (_leftButton && ![self.view.subviews containsObject:_leftButton]) {
-    [self.view addSubview:_leftButton];
+    [_container addSubview:_leftButton];
   }
   if (_rightButton && ![self.view.subviews containsObject:_rightButton]) {
-    [self.view addSubview:_rightButton];
+    [_container addSubview:_rightButton];
   }
 }
 
@@ -69,7 +75,7 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
     }
     _leftButton = leftButton;
     if (self.isViewLoaded) {
-      [self.view addSubview:_leftButton];
+      [_container addSubview:_leftButton];
     }
     [self updateTabBarLayout];
   }
@@ -83,7 +89,7 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
     }
     _rightButton = rightButton;
     if (self.isViewLoaded) {
-      [self.view addSubview:_rightButton];
+      [_container addSubview:_rightButton];
     }
     [self updateTabBarLayout];
   }
@@ -104,14 +110,15 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
   if (object == self.tabBar) {
     if ([keyPath isEqualToString:kAXSideButtonTabBarControllerHiddenKey]) {
       BOOL tabBarHidden = [change[@"new"] boolValue];
-      [CATransaction begin];
-      [CATransaction setDisableActions:YES];
-      [_separatorLayers enumerateObjectsUsingBlock:^(CALayer *layer, NSUInteger idx, BOOL *stop) {
-        layer.hidden = tabBarHidden;
-      }];
-      [CATransaction commit];
-      [_leftButton setHidden:tabBarHidden];
-      [_rightButton setHidden:tabBarHidden];
+      [_container setHidden:tabBarHidden];
+//      [CATransaction begin];
+//      [CATransaction setDisableActions:YES];
+//      [_separatorLayers enumerateObjectsUsingBlock:^(CALayer *layer, NSUInteger idx, BOOL *stop) {
+//        layer.hidden = tabBarHidden;
+//      }];
+//      [CATransaction commit];
+//      [_leftButton setHidden:tabBarHidden];
+//      [_rightButton setHidden:tabBarHidden];
       [_backgroundTabBar setHidden:tabBarHidden];
     }
   }
@@ -216,7 +223,7 @@ NSString * const kAXSideButtonTabBarControllerHiddenKey = @"hidden";
     position,
     0.5, height
   };
-  [self.view.layer addSublayer:layer];
+  [_container.layer addSublayer:layer];
   [_separatorLayers addObject:layer];
 }
 

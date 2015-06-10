@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		754B68DC1ADE6C2700F060D2 /* AXSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B68DA1ADE6C2700F060D2 /* AXSettingsViewController.m */; };
 		754B68DD1ADE6C2700F060D2 /* AXSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B68DB1ADE6C2700F060D2 /* AXSettingsViewController.xib */; };
+		756B07681B28010000004752 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 756B07671B28010000004752 /* CHANGELOG.md */; };
 		75A747C01B01BD8B000E49E0 /* AXHidesTabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A747BF1B01BD8B000E49E0 /* AXHidesTabSampleViewController.m */; };
 		75A7583B1B00D3420052E554 /* AXNextSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7583A1B00D3420052E554 /* AXNextSampleViewController.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		754B68D91ADE6C2700F060D2 /* AXSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSettingsViewController.h; sourceTree = "<group>"; };
 		754B68DA1ADE6C2700F060D2 /* AXSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSettingsViewController.m; sourceTree = "<group>"; };
 		754B68DB1ADE6C2700F060D2 /* AXSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AXSettingsViewController.xib; sourceTree = "<group>"; };
+		756B07671B28010000004752 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		75A747BE1B01BD8B000E49E0 /* AXHidesTabSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXHidesTabSampleViewController.h; sourceTree = "<group>"; };
 		75A747BF1B01BD8B000E49E0 /* AXHidesTabSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXHidesTabSampleViewController.m; sourceTree = "<group>"; };
 		75A758391B00D3420052E554 /* AXNextSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXNextSampleViewController.h; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				2D09130464F425204982AB71 /* AXSideButtonTabBarController.podspec */,
 				38259CD27FA904286B7329B1 /* README.md */,
+				756B07671B28010000004752 /* CHANGELOG.md */,
 				8E7DD833AA921F0368650019 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A747C01B01BD8B000E49E0 /* AXHidesTabSampleViewController.m in Sources */,
+				756B07681B28010000004752 /* CHANGELOG.md in Sources */,
 				75A7583B1B00D3420052E554 /* AXNextSampleViewController.m in Sources */,
 				754B68DC1ADE6C2700F060D2 /* AXSettingsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AXAppDelegate.m in Sources */,

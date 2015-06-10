@@ -18,6 +18,7 @@
 		65597CB5C9D0B540A065E93C /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 71846256EBDE54E22D18C5D0 /* FAKIcon.m */; };
 		69B909F2EB2119E856E5FEBF /* AXSideButtonTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = B418F68950B0A4AC1FFF4544 /* AXSideButtonTabBarController.h */; };
 		6CF051C84400851DF3900FB3 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C795C9D9BA597AE73807780 /* Pods-AXSideButtonTabBarController-AXSideButtonTabBarController-dummy.m */; };
+		756B07661B27FFD400004752 /* AXSideButtonsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 756B07651B27FFD400004752 /* AXSideButtonsContainer.m */; };
 		7887DAB31FCA6AC1F4313EF6 /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CEAAEB9FFB5CD43C690FB1 /* FAKFontAwesome.m */; };
 		7D6DB5C5C3AB0B5F787DE8E5 /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E2F0589E722FCD852C9C14 /* FAKFoundationIcons.m */; };
 		8A6A11F753AEBB98911D0D45 /* FAKFontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CD513306C3C5D816EFBAB07 /* FAKFontAwesome.h */; };
@@ -104,6 +105,8 @@
 		6783F06371B4A0379B963461 /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = ionicons.ttf; path = FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
 		71846256EBDE54E22D18C5D0 /* FAKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKIcon.m; path = FontAwesomeKit/FAKIcon.m; sourceTree = "<group>"; };
 		74ED51A25CAB7098E34992BB /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		756B07641B27FFD400004752 /* AXSideButtonsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSideButtonsContainer.h; sourceTree = "<group>"; };
+		756B07651B27FFD400004752 /* AXSideButtonsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSideButtonsContainer.m; sourceTree = "<group>"; };
 		7691D5C487E74C4C2205B582 /* Pods-Tests-AXSideButtonTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AXSideButtonTabBarController.xcconfig"; path = "../Pods-Tests-AXSideButtonTabBarController/Pods-Tests-AXSideButtonTabBarController.xcconfig"; sourceTree = "<group>"; };
 		77178DD2B97B3BC0F8FB2852 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		771C7227CD3C2A6F175A07B7 /* Pods-AXSideButtonTabBarController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AXSideButtonTabBarController-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -424,6 +427,8 @@
 				B4C9B5F022F64FCFF3BDD917 /* AXSideButton.m */,
 				B418F68950B0A4AC1FFF4544 /* AXSideButtonTabBarController.h */,
 				30343A55BBE0A08158161CEB /* AXSideButtonTabBarController.m */,
+				756B07641B27FFD400004752 /* AXSideButtonsContainer.h */,
+				756B07651B27FFD400004752 /* AXSideButtonsContainer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -668,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09794BBA6A25B0D65CF8334F /* Pods-AXSideButtonTabBarController-dummy.m in Sources */,
+				756B07661B27FFD400004752 /* AXSideButtonsContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
